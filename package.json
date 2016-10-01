@@ -1,0 +1,15 @@
+{
+  "name": "hacker-dream-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Just a theme.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/hacker-dream-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
