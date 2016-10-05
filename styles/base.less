@@ -63,14 +63,14 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @comment;
 }
 
 .keyword {
-  color: @purple;
+  color: @red;
 
   &.control {
-    color: @purple;
+    color: @red;
   }
 
   &.operator {
@@ -87,22 +87,23 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @purple;
+  color: @storage;
+  font-weight: bold;
 }
 
 .constant {
-  color: @orange;
+  color: @red;
 
   &.character.escape {
-    color: @cyan;
+    color: @light-green;
   }
 
   &.numeric {
-    color: @orange;
+    color: @red;
   }
 
   &.other.color {
-    color: @cyan;
+    color: @green;
   }
 
   &.other.symbol {
@@ -111,7 +112,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-  color: @red;
+  color: @light-green;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -128,11 +129,11 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @green;
+  color: @comment;
 
 
   &.regexp {
-    color: @cyan;
+    color: @red;
 
     .source.ruby.embedded {
       color: @orange;
@@ -181,32 +182,34 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @class;
   }
 
   &.function  {
-    color: @cyan;
+    color: @function;
 
     &.any-method {
-      color: @blue;
+      color: @function;
+      font-weight: bold;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @function;
+    font-weight: bold;
   }
   &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: @function;
+    font-weight: bold;
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @class;
   }
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @class;
   }
 
   &.name.section {
