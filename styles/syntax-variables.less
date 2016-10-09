@@ -3,6 +3,21 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+@text: white;
+@cursor: @green;
+@selection: @gray;
+@background: black;
+
+@comment: @light-gray;
+@storage: @red;
+@operator: @red;
+@function: @light-green;
+@class: @light-green;
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+
 // General colors
 @syntax-text-color: @text;
 @syntax-cursor-color: @cursor;
@@ -27,5 +42,5 @@
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
 @syntax-color-added: @green;
-@syntax-color-modified: @orange;
+@syntax-color-modified: @light-green;
 @syntax-color-removed: @red;

@@ -88,7 +88,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .storage {
   color: @storage;
-  font-weight: bold;
+  .bold;
 }
 
 .constant {
@@ -136,7 +136,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @red;
 
     .source.ruby.embedded {
-      color: @orange;
+      color: @blue;
     }
   }
 
@@ -164,13 +164,13 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     &.bold {
-      color: @light-orange;
-      font-weight: bold;
+      color: @red;
+      .bold;
     }
 
     &.italic {
-      color: @purple;
-      font-style: italic;
+      color: @green;
+      .italic;
     }
   }
 
@@ -190,7 +190,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.any-method {
       color: @function;
-      font-weight: bold;
+      .bold;
     }
   }
 }
@@ -198,11 +198,11 @@ atom-text-editor .search-results .marker.current-result .region,
 .entity {
   &.name.function {
     color: @function;
-    font-weight: bold;
+    .bold;
   }
   &.name.type {
     color: @function;
-    font-weight: bold;
+    .bold;
   }
 
   &.other.inherited-class {
@@ -218,12 +218,12 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
+    .bold;
   }
 
   &.other.attribute-name {
     color: @light-green;
-    font-weight: bold;
+    .bold;
 
     &.id {
       color: @blue;
@@ -237,15 +237,15 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.link {
-    color: @orange;
-  }
-
-  &.require {
     color: @blue;
   }
 
+  &.require {
+    color: @red;
+  }
+
   &.selector {
-    color: @purple;
+    color: @green;
   }
 
   &.separator {
@@ -260,12 +260,12 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .markup {
   &.bold {
-    color: @orange;
-    font-weight: bold;
+    color: @red;
+    .bold;
   }
 
   &.changed {
-    color: @purple;
+    color: @blue;
   }
 
   &.deleted {
@@ -273,8 +273,8 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.italic {
-    color: @purple;
-    font-style: italic;
+    color: @blue;
+    .italic;
   }
 
   &.heading .punctuation.definition.heading {
@@ -290,7 +290,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.quote {
-    color: @orange;
+    color: @blue;
   }
 
   &.raw.inline {
