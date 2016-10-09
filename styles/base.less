@@ -68,6 +68,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .keyword {
   color: @light-green;
+  .bold;
 
   &.control {
     color: @red;
@@ -78,7 +79,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @light-green;
   }
 
   &.other.unit {
@@ -87,7 +88,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .storage {
-  color: @storage;
+  color: @red;
   .bold;
 }
 
@@ -129,14 +130,13 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @comment;
-
+  color: @blue;
 
   &.regexp {
     color: @red;
 
     .source.ruby.embedded {
-      color: @blue;
+      color: @light-red;
     }
   }
 
@@ -149,6 +149,7 @@ atom-text-editor .search-results .marker.current-result .region,
   &.definition {
     &.comment {
       color: @light-gray;
+      .bold;
     }
 
     &.string,
@@ -181,6 +182,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
+  .bold;
   &.class {
     color: @class;
   }
@@ -190,19 +192,17 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.any-method {
       color: @function;
-      .bold;
     }
   }
 }
 
 .entity {
+  .bold;
   &.name.function {
     color: @function;
-    .bold;
   }
   &.name.type {
-    color: @function;
-    .bold;
+    color: @function
   }
 
   &.other.inherited-class {
@@ -218,12 +218,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.tag {
     color: @red;
-    .bold;
   }
 
   &.other.attribute-name {
     color: @light-green;
-    .bold;
 
     &.id {
       color: @blue;
