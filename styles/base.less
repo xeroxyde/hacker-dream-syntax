@@ -51,14 +51,14 @@ atom-text-editor,atom-text-editor {
   }
 }
 
-atom-text-editor .search-results .marker .region,
-atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region,
+atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region,
+atom-text-editor .search-results .syntax--marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -154,8 +154,8 @@ atom-text-editor .search-results .marker.current-result .region {
 
     &.syntax--string,
     &.syntax--variable,
-    &.parameters,
-    &.array {
+    &.syntax--parameters,
+    &.syntax--array {
       color: @syntax-text-color;
     }
 
@@ -223,7 +223,7 @@ atom-text-editor .search-results .marker.current-result .region {
   &.syntax--other.syntax--attribute-name {
     color: @light-green;
 
-    &.id {
+    &.syntax--id {
       color: @blue;
     }
   }
