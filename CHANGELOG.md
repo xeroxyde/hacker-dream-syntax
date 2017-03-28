@@ -1,3 +1,3 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+## 1.4.6 - UI update
+* Updated colors
+* Minor changes to match newly created UI

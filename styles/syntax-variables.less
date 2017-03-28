@@ -5,14 +5,14 @@
 
 @text: white;
 @cursor: @green;
-@selection: @gray;
+@selection: @light-black;
 @background: black;
 
 @comment: @light-gray;
-@storage: @red;
-@operator: @red;
+@storage: red;
+@operator: red;
 @function: @light-green;
-@class: @light-blue;
+@class: @blue;
 
 .syntax--bold { font-weight: bold; }
 .syntax--italic { font-style: italic; }
@@ -25,22 +25,22 @@
 @syntax-background-color: @background;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-wrap-guide-color: @light-black;
+@syntax-indent-guide-color: gray;
+@syntax-invisible-character-color: gray;
 
 // For find and replace markers
 @syntax-result-marker-color: @light-gray;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
+@syntax-gutter-text-color: white;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-background-color: black;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-background-color-selected: gray;
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
 @syntax-color-added: @green;
 @syntax-color-modified: @light-red;
-@syntax-color-removed: @red;
+@syntax-color-removed: red;
